@@ -16,4 +16,4 @@ A commit records any changes you make to the respository. And what makes a good 
 
 * What is a merge conflict?
 
-A merge conflict is when you try to merge a branch you made into the master branch and something goes wrong like when you adde a file name with another file on the master with the same name. Or if the file you were trying to add no longer exist the branch.
+A merge conflict is when you try to merge a branch you made into the master branch and something goes wrong like when you adde a file name with another file on the master with the same name. Or if the file you were trying to add no longer exist the branch
