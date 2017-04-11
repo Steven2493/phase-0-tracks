@@ -1,0 +1,27 @@
+#contact-info{
+  font-size:.8em;
+}
+.job{
+  background-color: #e9e5dc;
+  border-radius: 15px;
+padding: 15px;
+margin-top: 10px;
+
+}
+.accomplishments{
+  font-size: .8em;
+}
+
+h1#resume-title {
+  margin-top: 70px;
+  color:blue;
+ }
+ h1#resume-title:hover {
+    color: #FF00FF;
+
+}
+
+
+.job  .accomplishments   li{
+	color:red;
+}
