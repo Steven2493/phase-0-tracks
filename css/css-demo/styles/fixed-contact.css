@@ -11,8 +11,12 @@ section#contact-info {
 
 h1#resume-title {
   margin-top: 70px;
+  color:red;
 }
-
+h1#resume-title {
+  margin-top: 70px;
+  color:gold;
+}
 section#contact-info p {
   display: inline;
   padding-right: 20px;

@@ -9,9 +9,22 @@ cite {
   margin-top: 10px;
 }
 
+#external-links{
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2em;
+}
+
 #external-links ul {
   list-style-type: none;
   padding-left: 0px;
+}
+
+main{
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 /* you're welcome to edit the
@@ -30,3 +43,42 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+body{
+  max-width: 960px;
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+  img {
+    height: 600px; 
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #external-links ul {
+    font-size: .8em;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: hotpink;
+     width: 800px;
+     margin: 0 auto;
+  }
+}
+
+/*
+A media query allows you to apply CSS conditionally based on a variety of attributes. 
+If we use a media query to apply CSS for certain screen widths, 
+we can make our page look better at narrow widths.
+
+Making heading or other text smaller at very narrow widths
+Stacking page sections on top of one another and setting their widths to 100%
+Stacking images on top of one another at narrow widths
+Adding a third or even a fourth column of additional content at very wide widths
+Switching menu options from words to icons as widths shrink
+*/
