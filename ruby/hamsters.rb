@@ -1,3 +1,5 @@
+STDOUT.sync = true
+
 print "Which hamster would you like?"
 ham_name = gets.chomp
 puts "How loud would like it to be?"

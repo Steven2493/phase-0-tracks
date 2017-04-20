@@ -3,6 +3,7 @@
 # Assume lowercase input and output
 # Loops through string by character and moves each character ahead one letter
 # Returns the new string
+STDOUT.sync = true
 
 def encrypt(str)
   counter = 0
