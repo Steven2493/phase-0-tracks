@@ -1,0 +1,37 @@
+Elevator Algorithm
+If not in elevator enter it elevator
+Once in elevator move towards pin pad
+Until given instruction wait at pin pad for the floor choice
+Once instruction have been given search pin pad for floor choice
+Begin search by search at # 1
+ Continue search in a chronological order
+Stop once floor number given is reach
+Once floor # has reach begin to press button
+Stop all functions once elevator begins to move
+Once floor have been reach and doors have open tell User you have reach the destination. 
+Exit elevator along with user
+
+
+
+Banana & Strawberry Smoothie Algorithm 
+Begin by searching cabinets to find blender
+	Start at the first cabinet 
+	Until blender is found continue search
+Once blender has been found place on counter and plug in blender
+Afterwards head over to refrigerator
+Begin search of ingredients at top level 
+	Search and take milk
+	Continue search by going to each level until fruits are found
+	Proceed then to take ice from freezer level
+	Once found take items and close the door
+Head back to blender and place items next to them
+If user wants to add sugar
+	Begin cabinet loop until user finds sugar
+Else
+	Begin to peel banana and cutting strawberry stem
+Start to add all ingredients to blender
+Once items are proceed to button selection loop
+	Starting from beginning read each selection until Smoothie button is found
+	Once found press button 
+	While waiting for smoothie to finish begin cabinet search loop for a cup
+Remove  blender and pour contents in cup
