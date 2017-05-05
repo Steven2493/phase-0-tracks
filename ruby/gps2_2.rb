@@ -66,3 +66,18 @@ def print_list(list)
 end
 
 print_list(grocery_list)
+
+#On your own, add a commented reflection section to your gps2_2.rb file. Answer the following questions in your reflection:
+
+#What did you learn about pseudocode from working on this challenge?
+# I Learned its every usefull to plan out ahead before starting to write your code because otherwise you can get lost or sidetracked
+#What are the tradeoffs of using arrays and hashes for this challenge?
+#Arrays are great for storing items but Hashes are better for organizing those items so you can easily read and used whats in it
+#What does a method return?
+#The last line of that specific method
+#What kind of things can you pass into methods as arguments?
+# Anythings really integers strings and booleans
+#How can you pass information between methods?
+#By creating a variable and storing the method inside of it
+#What concepts were solidified in this challenge, and what concepts are still confusing?
+#How methods interact with each other is something I'm Still confused on but was solidified is actually how to save methods inside a variable so i use other methods on it
