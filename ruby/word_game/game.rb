@@ -30,9 +30,9 @@ end
     user_array = @user_guess.split('')
 
     user_array.each do |letter| # Compares players 2 letter to player 1s word
-     if word_array.include?(letter)#if users letter is in array begin this statement
-      match_index = word_array.index(letter)#Stores letter position 
-      word_index[match_index] = letter#Addeds Letter position in this array to replace (-)
+     if word_array.include?(letter)
+      match_index = word_array.index(letter)
+      word_index[match_index] = letter
      end
     end 
     dashes = word_index.join('')#Onces each loop ends adds player 2 letter to the index of dash array 
