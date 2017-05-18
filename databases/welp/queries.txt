@@ -1,0 +1,22 @@
+sqlite> select * from reviews
+5|amazing|1|1
+5|amazing|2|2
+sqlite> Select users_id from reviews;
+1
+2
+sqlite> select comment from reviews;
+amazing
+amazing
+
+sqlite> select stars from reviews;
+5
+5
+
+sqlite> select Firstname, Lastname from users;
+Steve|A
+Joey|C
+
+sqlite> select businessesname from businesses;
+Worldtakeover
+Wendy's
+
