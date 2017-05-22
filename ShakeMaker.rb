@@ -4,17 +4,6 @@ require 'sqlite3'
 
 db = SQLite3::Database.new("Shake.db")
 
-#Create Shake table
-create_shakemeal_table = <<-SQL
-	CREATE TABLE IF NOT EXISTS Shake(
-		id INTEGER PRIMARY KEY,
-		name VARCHAR(255),
-		fruit BOOLEAN,
-		veggie BOOLEAN,
-		mixed BOOLEAN
-)
-SQL
-
 fruits_list = <<-SQL
 	CREATE TABLE IF NOT EXISTS fruits_list(
 	id INTEGER PRIMARY KEY,
@@ -49,16 +38,44 @@ more_meals = <<-SQL
 SQL
 
 #creates table
-db.execute(create_shakemeal_table)
+#db.execute(create_shakemeal_table)
 db.execute(fruits_list)
 db.execute(veggies_list)
 db.execute(protien_flav)
 db.execute(more_meals)
 
 #create_menu 
-def create_food(db,name, fruit,veggie,mixed)
-	db.execute("INSERT INTO Shake(name, fruit,veggie,mixed) VALUES (?, ?, ?, ?)"  , [name, fruit,veggie,mixed])
+def create_food(db,fruit,veggie,protein)
+	db.execute("INSERT INTO more_meals(fruits_id,veggies_id,protien_id) VALUES (?, ?,?)"  , [fruit,veggie,protein])
+end
+
+def create_fruit_list(db, fruits)
+  db.execute("INSERT INTO fruits_list (fruits) VALUES (?)", [fruits])
+end
+
+def create_veggies_list(db, veggies)
+  db.execute("INSERT INTO veggies_list (veggies) VALUES (?)", [veggies])
+end
+
+def create_protein_list(db, protien_flav)
+  db.execute("INSERT INTO protien_list (protien_flav) VALUES (?)", [protien_flav])
 end
 
 
-create_food(db,"BananaStrawberry","true","false","false")
+
+#Creates Fruits list
+create_fruit_list(db,"Apple")
+create_fruit_list(db,"Banana")
+create_fruit_list(db,"Strawberry")
+
+#Creates Veggie list
+create_veggies_list(db, "Kale")
+create_veggies_list(db, "Spinach")
+create_veggies_list(db, "Carrots")
+
+#Creates Portein list
+create_protein_list(db, "Chocolate")
+create_protein_list(db, "Vanilla")
+create_protein_list(db, "Unflavored")
+
+create_food(db,2,1,2)
