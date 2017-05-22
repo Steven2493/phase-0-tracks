@@ -1,0 +1,8 @@
+create table reviews(
+   ...> stars int,
+   ...> comment varchar(255),
+   ...> business_id int,
+   ...> foreign key(business_id) references businesses(id)
+   ...> users_id int,
+   ...> foreign key(users_id) references users(id)
+   ...> );
