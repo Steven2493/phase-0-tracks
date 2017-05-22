@@ -1,0 +1,9 @@
+sqlite> SELECT * FROM players,team WHERE players.team_id = team.id;
+1|Messi|10|1|1|Barcelona
+2|Ronaldo|7|2|2|Real Madrid
+3|Hazard|10|3|3|Chelsea
+
+sqlite> SELECT players.name, team FROM players JOIN team ON players.team_id = team.id;
+Messi|Barcelona
+Ronaldo|Real Madrid
+Hazard|Chelsea
