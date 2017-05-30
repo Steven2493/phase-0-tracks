@@ -24,4 +24,18 @@ post '/students' do
   redirect '/'
 end
 
+get '/rockdoves' do
+  @NY_students = db.execute("SELECT * FROM students WHERE campus=?", ['NYC'])
+  erb :rockdoves
+end
+
+get '/campuses/new' do
+  @campuses = db.execute("SELECT * FROM campuses")
+  erb :new_campus
+end
+
+post '/campuses' do
+  db.execute("INSERT INTO campuses (name) VALUES (?)", [params['name']])
+  redirect '/campuses/new'
+end
 # add static resources
